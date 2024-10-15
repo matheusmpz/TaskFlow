@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaskFlow - Dashboard</title>
-    <link href="./output.css" rel="stylesheet">
+    <title>TaskFlow - Tarefas de Casa</title>
+    <link href="../css/output.css" rel="stylesheet">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,11 @@
     <!-- SIDEBAR -->
     <section class="fixed w-[360px] pl-4 bg-white m-4 h-dvh rounded-lg flex-grow flex flex-col justify-between">  
         <div class="space-y-3 pt-4">
-            <p class="text-neutral-500 cursor-default">Taks<span class="font-bold">Flow</span></p>
+            <p class="text-neutral-500">Taks<span class="font-bold">Flow</span></p>
             <article class="pt-4">
                 <h2 class="text-3xl font-semibold">Suas Listas</h2>
             </article>
-            <article class="flex space-x-4 cursor-pointer bg-neutral-100 rounded-md w-80 h-12 items-center p-3">
+            <article class="flex space-x-4 cursor-pointer hover:bg-neutral-100 rounded-md w-80 h-12 items-center p-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M3.75 6C3.75 5.40326 3.98705 4.83097 4.40901 4.40901C4.83097 3.98705 5.40326 3.75 6 3.75H8.25C8.84674 3.75 9.41903 3.98705 9.84099 4.40901C10.2629 4.83097 10.5 5.40326 10.5 6V8.25C10.5 8.84674 10.2629 9.41903 9.84099 9.84099C9.41903 10.2629 8.84674 10.5 8.25 10.5H6C5.40326 10.5 4.83097 10.2629 4.40901 9.84099C3.98705 9.41903 3.75 8.84674 3.75 8.25V6ZM3.75 15.75C3.75 15.1533 3.98705 14.581 4.40901 14.159C4.83097 13.7371 5.40326 13.5 6 13.5H8.25C8.84674 13.5 9.41903 13.7371 9.84099 14.159C10.2629 14.581 10.5 15.1533 10.5 15.75V18C10.5 18.5967 10.2629 19.169 9.84099 19.591C9.41903 20.0129 8.84674 20.25 8.25 20.25H6C5.40326 20.25 4.83097 20.0129 4.40901 19.591C3.98705 19.169 3.75 18.5967 3.75 18V15.75ZM13.5 6C13.5 5.40326 13.7371 4.83097 14.159 4.40901C14.581 3.98705 15.1533 3.75 15.75 3.75H18C18.5967 3.75 19.169 3.98705 19.591 4.40901C20.0129 4.83097 20.25 5.40326 20.25 6V8.25C20.25 8.84674 20.0129 9.41903 19.591 9.84099C19.169 10.2629 18.5967 10.5 18 10.5H15.75C15.1533 10.5 14.581 10.2629 14.159 9.84099C13.7371 9.41903 13.5 8.84674 13.5 8.25V6ZM13.5 15.75C13.5 15.1533 13.7371 14.581 14.159 14.159C14.581 13.7371 15.1533 13.5 15.75 13.5H18C18.5967 13.5 19.169 13.7371 19.591 14.159C20.0129 14.581 20.25 15.1533 20.25 15.75V18C20.25 18.5967 20.0129 19.169 19.591 19.591C19.169 20.0129 18.5967 20.25 18 20.25H15.75C15.1533 20.25 14.581 20.0129 14.159 19.591C13.7371 19.169 13.5 18.5967 13.5 18V15.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
@@ -31,7 +31,7 @@
                   </svg>
                 <a href="list-1.html"><p>Tarefas do Dia</p></a>
             </article>
-            <article class="flex space-x-4 cursor-pointer hover:bg-neutral-100 rounded-md w-80 h-12 items-center p-3">
+            <article class="flex space-x-4 cursor-pointer bg-neutral-100 rounded-md w-80 h-12 items-center p-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M2.25 12L11.204 3.04501C11.644 2.60601 12.356 2.60601 12.795 3.04501L21.75 12M4.5 9.75001V19.875C4.5 20.496 5.004 21 5.625 21H9.75V16.125C9.75 15.504 10.254 15 10.875 15H13.125C13.746 15 14.25 15.504 14.25 16.125V21H18.375C18.996 21 19.5 20.496 19.5 19.875V9.75001M8.25 21H16.5" stroke="#262626" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
@@ -59,46 +59,133 @@
         </div>
         
         <div class="w-64 text-neutral-500 space-y-4 pb-9">
-            <p class="cursor-pointer hover:underline hover:underline-offset-2">CONFIGURAÇÕES</p>
-            <p class="cursor-pointer hover:underline hover:underline-offset-2">DIRETRIZES DA COMUNIDADE</p>
+            <p class="cursor-pointer">CONFIGURAÇÕES</p>
+            <p class="cursor-pointer">DIRETRIZES DA COMUNIDADE</p>
             <p>Lembre-se de ler as <span class="underline underline-offset-2 cursor-pointer">diretrizes da comunidade</span>. Caso tenha alguma dúvida entre em <span class="underline underline-offset-2 cursor-pointer">contato.</span></p>
         </div>
     </section>
 
+    <!-- CONTEÚDO -->
     <main class="ml-[360px] pl-28 pt-20">
-        <div class="space-y-2">
-            <p class="hover:underline cursor-pointer">Dashboard</p>
-            <p class="text-3xl font-semibold text-neutral-800"><span id="hora">Olá</span>, Matheus Pereira! 👋</p>
-            <p class="text-2xl text-neutral-800" id="data"></p>
-        </div>
-        <div class="space-y-4 mt-12">
-            <div class="flex items-center justify-between p-6 rounded-xl text-lg bg-white w-[1300px] h-16">
-                <a href="list-1.html" class="cursor-pointer"><p>🌞️ TAREFAS DO DIA</p></a>
-                <span class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></span>
+        <section class="space-y-2 flex items-center justify-between">
+            <div>
+                <p><a href="dashboard.html" class="hover:underline hover:cursor-pointer">Dashboard</a>>Tarefas de Casa</p>
+                <p class="text-3xl font-semibold text-neutral-800"><span id="hora"></span>, Matheus Pereira! 👋</p>
+                <p class="text-2xl text-neutral-800" id="data"></p>
             </div>
-            <div class="flex items-center justify-between p-6 rounded-xl text-lg bg-white w-[1300px] h-16">
-                <a href="list-2.html" class="cursor-pointer"><p>🏠 TAREFAS DA CASA</p></a>
-                <span class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></span>
+
+            <div>
+                <div class="flex space-x-4 items-center justify-center bg-white rounded-lg w-32 h-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 1C12.755 1 15.455 1.232 18.083 1.678C18.616 1.768 19 2.234 19 2.774V3.818C19 4.11348 18.9418 4.40606 18.8287 4.67904C18.7157 4.95203 18.5499 5.20007 18.341 5.409L12.909 10.841C12.7001 11.0499 12.5343 11.298 12.4213 11.571C12.3082 11.8439 12.25 12.1365 12.25 12.432V15.359C12.2501 15.777 12.1337 16.1867 11.914 16.5423C11.6943 16.8978 11.3799 17.1851 11.006 17.372L7.75 19V12.432C7.75 12.1365 7.69181 11.8439 7.57874 11.571C7.46566 11.298 7.29993 11.0499 7.091 10.841L1.659 5.409C1.45007 5.20007 1.28434 4.95203 1.17126 4.67904C1.05819 4.40606 0.999997 4.11348 1 3.818V2.774C1 2.234 1.384 1.768 1.917 1.678C4.58757 1.22586 7.29143 0.999058 10 1Z" stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p class="text-neutral-800">FILTRO</p>
+                </div>
             </div>
+        </section>
+
+        <section class="space-y-4 mt-12">
+
+            <!-- TASK -->
             <div class="flex items-center justify-between p-6 rounded-xl text-lg bg-white w-[1300px] h-16">
-                <a href="list-3.html" class="cursor-pointer"><p>🛍️ LISTA DE COMPRAS</p></a>
-                <span class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <div class="flex space-x-4 items-center">
+                    <input type="checkbox" name="" id="" class="form-checkbox w-5 h-5">
+                    <p>Dar banho no peixe</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-sm font-medium text-red-700 ring-1 ring-inset ring-red-600/10">PRIORITY HIGH</span>
+                    <div class="flex items-center space-x-1 rounded px-2 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 6V12H16.5M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>9:00 - 11:00</p>
+                    </div>
+                    <span class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></span>
+                    </svg></span>
+                </div>
             </div>
+
+            <!-- TASK -->
             <div class="flex items-center justify-between p-6 rounded-xl text-lg bg-white w-[1300px] h-16">
-                <a href="list-4.html" class="cursor-pointer"><p>🎬 LISTA DE FILMES</p></a>
-                <span class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <div class="flex space-x-4 items-center">
+                    <input type="checkbox" name="" id="" class="form-checkbox w-5 h-5">
+                    <p>Reunião com a equipe</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="inline-flex items-center rounded-md bg-orange-50 px-2 py-1 text-sm font-medium text-orange-600 ring-1 ring-inset ring-red-600/10">PRIORITY MEDIUM</span>
+                    <div class="flex items-center space-x-1 rounded px-2 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 6V12H16.5M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>14:00 - 15:00</p>
+                    </div>
+                    <span class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></span>
+                    </svg></span>
+                </div>
             </div>
-        </div>
+
+            <!-- TASK -->
+            <div class="flex items-center justify-between p-6 rounded-xl text-lg bg-white w-[1300px] h-16">
+                    <div class="flex space-x-4 items-center">
+                        <input type="checkbox" name="" id="" class="form-checkbox w-5 h-5">
+                        <p>Organizar arquivos do projeto</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-sm font-medium text-blue-600 ring-1 ring-inset ring-blue-500/10">PRIORITY LOW</span>
+                        <div class="flex items-center space-x-1 rounded px-2 py-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 6V12H16.5M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p>15:30 - 16:30</p>
+                        </div>
+                        <span class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#525252" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></span>
+                    </div>
+            </div>
+            
+        </section>
+
+        <!-- NEW TASK (hidden)-->
+        <section class="absolute pb-16 bottom-0 flex mt-64 w-[1300px] justify-between">
+            <div class="flex items-center p-4 gap-3 bg-neutral-800 w-[640px] h-16 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="29" viewBox="0 0 31 29" fill="none">
+                   <path d="M15.3846 5.3999V23.3999M24.6153 14.3999H6.15381" stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="text-neutral-50 text-lg">Criar nova tarefa</p>
+            </div>
+            <div class="w-14 h-14 flex items-center justify-center rounded-full">
+
+                <button id="openListTask">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 26 18" fill="none">
+                   <path d="M7.93333 1.53333H25M7.93333 9H25M7.93333 16.4667H25M1.53333 1.53333H1.54329V1.54471H1.53333V1.53333ZM2.06667 1.53333C2.06667 1.67478 2.01048 1.81044 1.91046 1.91046C1.81044 2.01048 1.67478 2.06667 1.53333 2.06667C1.39188 2.06667 1.25623 2.01048 1.15621 1.91046C1.05619 1.81044 1 1.67478 1 1.53333C1 1.39188 1.05619 1.25623 1.15621 1.15621C1.25623 1.05619 1.39188 1 1.53333 1C1.67478 1 1.81044 1.05619 1.91046 1.15621C2.01048 1.25623 2.06667 1.39188 2.06667 1.53333ZM1.53333 9H1.54329V9.01138H1.53333V9ZM2.06667 9C2.06667 9.14145 2.01048 9.2771 1.91046 9.37712C1.81044 9.47714 1.67478 9.53333 1.53333 9.53333C1.39188 9.53333 1.25623 9.47714 1.15621 9.37712C1.05619 9.2771 1 9.14145 1 9C1 8.85855 1.05619 8.7229 1.15621 8.62288C1.25623 8.52286 1.39188 8.46667 1.53333 8.46667C1.67478 8.46667 1.81044 8.52286 1.91046 8.62288C2.01048 8.7229 2.06667 8.85855 2.06667 9ZM1.53333 16.4667H1.54329V16.478H1.53333V16.4667ZM2.06667 16.4667C2.06667 16.6081 2.01048 16.7438 1.91046 16.8438C1.81044 16.9438 1.67478 17 1.53333 17C1.39188 17 1.25623 16.9438 1.15621 16.8438C1.05619 16.7438 1 16.6081 1 16.4667C1 16.3252 1.05619 16.1896 1.15621 16.0895C1.25623 15.9895 1.39188 15.9333 1.53333 15.9333C1.67478 15.9333 1.81044 15.9895 1.91046 16.0895C2.01048 16.1896 2.06667 16.3252 2.06667 16.4667Z" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+            </div>
+       </section>
+
+       <!-- MODAL -->
+       <article id="listTask" class=" fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-[990px] h-[556px] relative flex flex-col items-center justify-center">
+
+                <!-- CONTEÚDO -->
+                <div class="flex flex-col gap-4 items-center justify-center">
+                    <img class="w-80" src="assets/illustration.png" alt="not-task-list">
+                    <h3 class="text-xl text-neutral-800">Ainda não há <span class="font-bold">tarefas realizadas!</span></h3>
+                </div>
+
+                <!-- CLOSE BUTTON -->
+                <div class="absolute bottom-8 right-8">
+                    <button id="closeListTask" class="w-[72px] h-10 bg-neutral-800 rounded-lg text-neutral-50 ">Fechar</button>
+                </div>
+                
+            </div>
+       </article>
     </main>
 
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

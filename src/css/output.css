@@ -642,16 +642,16 @@ video {
   width: 3.5rem;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .w-5 {
   width: 1.25rem;
 }
 
 .w-52 {
   width: 13rem;
-}
-
-.w-60 {
-  width: 15rem;
 }
 
 .w-64 {
@@ -680,22 +680,6 @@ video {
 
 .w-\[990px\] {
   width: 990px;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-36 {
-  width: 9rem;
 }
 
 .flex-grow {
