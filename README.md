@@ -40,7 +40,12 @@ TaskFlow/
 │
 ├── app/
 │   ├── src/
-│   │   ├── index.html
+│   │   ├── pages/
+│   │   │   ├── index.html
+│   │   │   ├── list-1.html
+│   │   │   ├── list-2.html
+│   │   │   ├── list-3.html
+│   │   │   └── list-4.html
 │   │   ├── css/
 │   │   │   ├── input.css
 │   │   │   └── output.css
