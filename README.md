@@ -10,7 +10,7 @@
 - **Tailwind CSS**: Estilização rápida
 - **Heroicons**: Ícones utilizados na interface
 
-## Funcionalidades
+## Funcionalidades adicionais
 
 - **Criação de Tarefas**: Adicione novas tarefas com facilidade.
 - **Edição de Tarefas**: Altere detalhes de tarefas existentes.
