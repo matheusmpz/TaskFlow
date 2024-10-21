@@ -62,7 +62,7 @@ TaskFlow/
 Este projeto aceita contribuições, especialmente para a parte de back-end, onde planejo implementar funcionalidades que integrem um banco de dados às funcionalidades do front-end já apresentado.
 
 ## Informações adicionais
-Apresentação no behance: https://www.behance.net/matheusmpz
+Apresentação no behance: [https://www.behance.net/matheusmpz](https://www.behance.net/gallery/210702427/App-To-do-List-TaskFlow)
 
 Para perguntas ou feedback, sinta-se à vontade para entrar em contato:
 - **E-mail:** matheus.psoares4@gmail.com
