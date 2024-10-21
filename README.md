@@ -1,6 +1,6 @@
 # TaskFlow
 
-**TaskFlow** é uma aplicação de gerenciamento de tarefas que permite aos usuários criar, editar e excluir listas de tarefas de forma intuitiva. Desenvolvido com um foco em usabilidade e design para desktop, o TaskFlow visa ajudar os usuários a organizarem suas atividades diárias de maneira eficiente. Atualmente, o TaskFlow é um protótipo com a parte visual (front-end) implementada e algumas interações dinâmicas utilizando JavaScript.
+**TaskFlow** é um protótipo de gerenciamento de tarefas que permite aos usuários criar, editar e excluir listas de tarefas de forma intuitiva. Desenvolvido com um foco em usabilidade e design para desktop, o TaskFlow visa ajudar os usuários a organizarem suas atividades diárias de maneira eficiente. Atualmente, o TaskFlow é um protótipo com a parte visual (front-end) implementada e algumas interações dinâmicas utilizando JavaScript.
 
 ## Tecnologias Utilizadas
 
